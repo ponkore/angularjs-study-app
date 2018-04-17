@@ -1,13 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-
-import { AppComponent } from './app.component';
-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AppComponent } from './app.component';
 import { ButtonsCheckboxComponent } from './components/buttons-checkbox/buttons-checkbox.component';
-
 
 @NgModule({
     declarations: [
@@ -15,8 +12,10 @@ import { ButtonsCheckboxComponent } from './components/buttons-checkbox/buttons-
         ButtonsCheckboxComponent
     ],
     imports: [
-        NgbModule.forRoot(),
         BrowserModule,
+        FormsModule,
+        ReactiveFormsModule,
+        NgbModule.forRoot(),
         AppRoutingModule
     ],
     providers: [],
