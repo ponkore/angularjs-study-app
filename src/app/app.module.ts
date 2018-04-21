@@ -7,18 +7,18 @@ import { AppComponent } from './app.component';
 import { ButtonsCheckboxModule } from './components/buttons-checkbox/buttons-checkbox.module';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-    ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        ReactiveFormsModule,
-        NgbModule.forRoot(),
-        AppRoutingModule,
-        ButtonsCheckboxModule
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgbModule.forRoot(),
+    AppRoutingModule,
+    ButtonsCheckboxModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
