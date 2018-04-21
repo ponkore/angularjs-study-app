@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { ButtonsCheckboxModule } from './components/buttons-checkbox/buttons-checkbox.module';
 import { NgbdDatepickerPopupModule } from './components/ngbd-datepicker-popup/ngbd-datepicker-popup.module';
+import { FugaService } from './service/fuga.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { NgbdDatepickerPopupModule } from './components/ngbd-datepicker-popup/ng
     ButtonsCheckboxModule,
     NgbdDatepickerPopupModule
   ],
-  providers: [],
+  providers: [FugaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
