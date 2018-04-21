@@ -2,15 +2,21 @@ import { TestBed, async } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { ButtonsCheckboxModule } from './components/buttons-checkbox/buttons-checkbox.module';
+import { NgbdDatepickerPopupModule } from './components/ngbd-datepicker-popup/ngbd-datepicker-popup.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
+        NgbModule.forRoot(),
         FormsModule,
-        ButtonsCheckboxModule
+        ButtonsCheckboxModule,
+        NgbdDatepickerPopupModule
       ],
       declarations: [
         AppComponent

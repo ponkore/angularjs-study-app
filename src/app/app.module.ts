@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
+
 import { ButtonsCheckboxModule } from './components/buttons-checkbox/buttons-checkbox.module';
+import { NgbdDatepickerPopupModule } from './components/ngbd-datepicker-popup/ngbd-datepicker-popup.module';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,10 @@ import { ButtonsCheckboxModule } from './components/buttons-checkbox/buttons-che
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule,
     NgbModule.forRoot(),
     AppRoutingModule,
-    ButtonsCheckboxModule
+    ButtonsCheckboxModule,
+    NgbdDatepickerPopupModule
   ],
   providers: [],
   bootstrap: [AppComponent]
