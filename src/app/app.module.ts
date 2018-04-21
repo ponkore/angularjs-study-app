@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NgbModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,7 +18,6 @@ import { ModalDialogModule } from './components/modal-dialog/modal-dialog.module
     BrowserModule,
     FormsModule,
     NgbModule.forRoot(),
-    NgbModalModule,
     AppRoutingModule,
     ButtonsCheckboxModule,
     NgbdDatepickerPopupModule,
