@@ -15,6 +15,4 @@ import { FugaService } from '../../service/fuga.service';
   exports: [ButtonsCheckboxComponent],
   providers: [FugaService]
 })
-export class ButtonsCheckboxModule {
-  constructor() { }
-}
+export class ButtonsCheckboxModule { }

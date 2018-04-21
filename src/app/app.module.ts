@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ButtonsCheckboxModule } from './components/buttons-checkbox/buttons-checkbox.module';
 import { NgbdDatepickerPopupModule } from './components/ngbd-datepicker-popup/ngbd-datepicker-popup.module';
 import { FugaService } from './service/fuga.service';
+import { ModalDialogModule } from './components/modal-dialog/modal-dialog.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FugaService } from './service/fuga.service';
     NgbModule.forRoot(),
     AppRoutingModule,
     ButtonsCheckboxModule,
-    NgbdDatepickerPopupModule
+    NgbdDatepickerPopupModule,
+    ModalDialogModule
   ],
   providers: [FugaService],
   bootstrap: [AppComponent]
