@@ -17,8 +17,8 @@ export class ModalDialogComponent implements OnInit {
   ngOnInit() {
   }
 
-  openBackDropCustomClass(content) {
-    this.modalService.open(content, { backdropClass: 'light-blue-backdrop' });
+  open(content) {
+    this.modalService.open(content);
   }
 
 }
