@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-root',
@@ -14,15 +14,21 @@ export class AppComponent {
   constructor(private modalService: NgbModal) {
   }
 
-  open(content) {
-    this.modalService.open(content);
+  open(modal_content) {
+    this.modalService.open(modal_content).result.then((result) => {
+      this.closeResult = `Close with ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed with ${this.getDismissReason(reason)}`;
+    });
   }
 
-  close(message) {
-    console.log('(in app)close message=' + message);
-  }
-
-  dismiss(message) {
-    console.log('(in app)dismiss message=' + message);
+  private getDismissReason(reason: any): string {
+    if (reason === ModalDismissReasons.ESC) {
+      return 'by pressing ESC';
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+      return 'by clicking on a backdrop';
+    } else {
+      return `with: ${reason}`;
+    }
   }
 }

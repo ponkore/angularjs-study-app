@@ -7,7 +7,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ButtonsCheckboxModule } from './components/buttons-checkbox/buttons-checkbox.module';
 import { NgbdDatepickerPopupModule } from './components/ngbd-datepicker-popup/ngbd-datepicker-popup.module';
-import { ModalDialogModule } from './components/modal-dialog/modal-dialog.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -18,7 +17,6 @@ describe('AppComponent', () => {
         FormsModule,
         ButtonsCheckboxModule,
         NgbdDatepickerPopupModule,
-        ModalDialogModule
       ],
       declarations: [
         AppComponent

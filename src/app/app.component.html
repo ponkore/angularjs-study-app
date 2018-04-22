@@ -15,10 +15,10 @@
 <app-ngbd-datepicker-popup></app-ngbd-datepicker-popup>
 
 <!-- start modal dialog -->
-<ng-template #content let-c="close" let-d="dismiss">
+<ng-template #modal_content let-c="close" let-d="dismiss">
   <div class="modal-header">
     <h4 class="modal-title">Modal title</h4>
-    <button type="button" class="close" aria-label="Close" (click)="d('Dismiss click')">
+    <button type="button" class="close" aria-label="Close" (click)="d('dismiss')">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
@@ -26,11 +26,12 @@
     <p>One fine body&hellip;</p>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-light" (click)="c('Close click')">Close</button>
+    <button type="button" class="btn btn-light" (click)="c('ok')">Ok</button>
+    <button type="button" class="btn btn-light" (click)="c('cancel')">Cancel</button>
   </div>
 </ng-template>
 
-<button class="btn btn-outline-primary mb-1" (click)="open(content)">Modal Open</button>
+<button class="btn btn-outline-primary mb-1" (click)="open(modal_content)">Modal Open</button>
 <!-- end of modal dialog -->
 
 <main role="main" class="container">
