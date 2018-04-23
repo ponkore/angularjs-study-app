@@ -14,6 +14,9 @@
 <app-buttons-checkbox></app-buttons-checkbox>
 <app-ngbd-datepicker-popup></app-ngbd-datepicker-popup>
 
+<button class="btn btn-outline-primary mb-1" [@heroState]="state"
+        (click)="toggleState()">Toggle State</button>
+
 <!-- start modal dialog -->
 <ng-template #modal_content let-c="close" let-d="dismiss">
   <div class="modal-header">
