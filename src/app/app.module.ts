@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { ButtonsCheckboxModule } from './components/buttons-checkbox/buttons-checkbox.module';
 import { NgbdDatepickerPopupModule } from './components/ngbd-datepicker-popup/ngbd-datepicker-popup.module';
 import { FugaService } from './service/fuga.service';
+import { NgSpinKitModule } from 'ng-spin-kit';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FugaService } from './service/fuga.service';
     AppRoutingModule,
     ButtonsCheckboxModule,
     NgbdDatepickerPopupModule,
+    NgSpinKitModule,
   ],
   providers: [FugaService],
   bootstrap: [AppComponent]
